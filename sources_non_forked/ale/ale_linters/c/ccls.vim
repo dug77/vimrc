@@ -3,6 +3,7 @@
 
 call ale#Set('c_ccls_executable', 'ccls')
 call ale#Set('c_ccls_init_options', {})
+call ale#Set('c_build_dir', '')
 
 call ale#linter#Define('c', {
 \   'name': 'ccls',
