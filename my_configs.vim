@@ -12,7 +12,7 @@ function! IsOnSomeParticularMachine(hostname)
     return match($HOST, a:hostname) >= 0
 endfunction
 
-if !IsOnSomeParticularMachine('BATTY')
+if !IsOnSomeParticularMachine('batty')
   set columns=163
   set lines=64
   winpos 1520 120

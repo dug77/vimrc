@@ -11,5 +11,5 @@ call ale#linter#Define('c', {
 \   'executable': {b -> ale#Var(b, 'c_ccls_executable')},
 \   'command': '%e',
 \   'project_root': function('ale#handlers#ccls#GetProjectRoot'),
-\   'initialization_options': {b -> ale#Var(b, 'c_ccls_init_options')},
+\   'initialization_options': {b -> ale#handlers#ccls#GetInitOpts(b, 'c_ccls_init_options')},
 \})
